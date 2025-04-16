@@ -4,8 +4,8 @@ import { TextRevealCard, TextRevealCardTitle } from "@/components/ui/text-reveal
 import { createClient } from "@/utils/supabase/server"
 import { Separator } from "@radix-ui/react-separator"
 
-export default async function GroupIdPage({ params }: { params: {id: string } }) {
-  const { id: groupId } = await params
+export default async function GroupIdPage({ params }: { params: Promise<{ id: string }> }) {
+  const groupId = (await params).id
   
   const supabase = await createClient()
 
