@@ -21,14 +21,12 @@ export async function login(previousState: LoginState, formData: FormData) {
   })
 
   if (error) {
-    console.log('erro')
     return {
       success: false,
       message: error.message
     }
   }
   
-  console.log('deu certo')
   return {
     success: true,
     message: "Email enviado!"
