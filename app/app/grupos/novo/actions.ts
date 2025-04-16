@@ -85,7 +85,7 @@ export async function createGroup(
     }
   }
 
-  redirect(`/app/grupos/${newGroup}`)
+  redirect(`/app/grupos/${newGroup.id}`)
 }
 
 type Participant = {

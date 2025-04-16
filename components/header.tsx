@@ -30,7 +30,7 @@ export default function Header() {
             </Link>
 
             <Button asChild variant="outline">
-              <Link href="app/grupos/novo">
+              <Link href="/app/grupos/novo">
                 Novo Grupo
               </Link>
             </Button>
